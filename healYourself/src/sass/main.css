@@ -8619,7 +8619,7 @@ button {
 }
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(5) {
-    margin-left: 95px;
+    margin-left: 92px;
   }
 }
 .program .ea-plan .first-level > :nth-child(6) {
@@ -8637,7 +8637,7 @@ button {
 }
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(6) {
-    margin-left: 87px;
+    margin-left: 83px;
   }
 }
 .program .ea-plan .first-level > :nth-child(7) {
@@ -8655,7 +8655,7 @@ button {
 }
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(7) {
-    margin-left: 75px;
+    margin-left: 71px;
   }
 }
 .program .ea-plan .first-level > :nth-child(8) {
@@ -8673,7 +8673,7 @@ button {
 }
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(8) {
-    margin-left: 61px;
+    margin-left: 55px;
   }
 }
 .program .ea-plan .first-level > :nth-child(9) {
@@ -8691,7 +8691,7 @@ button {
 }
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(9) {
-    margin-left: 45px;
+    margin-left: 42px;
   }
 }
 .program .ea-plan .second-level {
@@ -8753,6 +8753,12 @@ button {
 @media (max-width: 768px) {
   .program .ea-plan .ea-result h3.ea-title:before, .program .ea-plan .ea-result h3.ea-title:after {
     top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .program .ea-plan .ea-result h3.ea-title:before, .program .ea-plan .ea-result h3.ea-title:after {
+    width: 20%;
+    top: 16px;
   }
 }
 .program .ea-plan .ea-result p {
