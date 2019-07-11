@@ -8,6 +8,7 @@ $black: #010101;
 $brown: #4e1118;
 $line: 1px solid $red;
 $shadow: #3c5756;
+$bg3-color: #91d3d2;
 
 * {
   margin: 0;
@@ -16,7 +17,7 @@ $shadow: #3c5756;
 
 body, header, main, footer {
   max-width: 1914px;
-  min-width: 450px;
+  //min-width: 450px;
   margin: 0 auto;
   font: $mainFont;
   color: $black;
@@ -63,6 +64,9 @@ button {
   background: url("../img/desctop/bkg1_dskt.jpg") no-repeat 50%;
   background-size: cover;
   font-weight: bold;
+  @media (max-width: 993px) {
+    height: 675px;
+  }
   @media (max-width: 768px) {
     height: 747px;
   }
@@ -174,10 +178,11 @@ button {
     border-bottom: $line;
     border-right: $line;
     border-left: $line;
-    @media (max-width: 1250px) {
-      padding-top: 55px;
-      padding-left: 80px;
-      padding-right: 80px;
+    @media (max-width: 1200px) {
+      padding: 55px 80px 10px;
+    }
+    @media (max-width: 992px) {
+      padding: 55px 110px 20px;
     }
     @media (max-width: 768px) {
       border: none;
@@ -225,6 +230,9 @@ button {
       @media (max-width: 1250px) {
         font-size: 4.4rem;
       }
+      @media (max-width: 992px) {
+        font-size: 3.5rem;
+      }
       @media (max-width: 768px) {
         font-size: 3rem;
         white-space: normal;
@@ -243,6 +251,9 @@ button {
       letter-spacing: -0.4px;
       @media (max-width: 1250px) {
         font-size: 1.7rem;
+      }
+      @media (max-width: 992px) {
+        font-size: 1.5rem;
       }
       @media (max-width: 768px) {
         font-size: 1.3rem;
@@ -263,10 +274,6 @@ button {
     justify-content: space-between;
     align-items: center;
     @media (max-width: 992px) {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    @media (max-width: 768px) {
       padding-top: 4px;
       flex-direction: column;
     }
@@ -281,9 +288,17 @@ button {
       border-radius: 8px;
       font-weight: bold;
       position: relative;
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         &:last-of-type {
           margin-top: 16px;
+        }
+        &:first-of-type {
+          margin-top: 16px;
+        }
+      }
+      @media (max-width: 768px) {
+        &:first-of-type {
+          margin-top: 0;
         }
       }
 
@@ -303,7 +318,6 @@ button {
         cursor: pointer;
       }
     }
-
   }
 
   .stock {
@@ -340,11 +354,9 @@ button {
     color: $brown;
     font-size: 1.5rem;
   }
-
 }
 
 .components {
-
   padding-top: 78px;
   font-weight: 700;
   display: flex;
@@ -353,10 +365,12 @@ button {
   @media (max-width: 1250px) {
     padding-top: 34px;
   }
+  @media (max-width: 100px) {
+    padding: 34px 50px 0;
+  }
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }
-
 
   .component {
     position: relative;
@@ -384,7 +398,6 @@ button {
       .component-title {
         bottom: -74px;
         left: 34px;
-
         @media (max-width: 768px) {
           width: 75px;
           bottom: -57px;
@@ -406,7 +419,6 @@ button {
 
       .component-title {
         bottom: -106px;
-
         @media (max-width: 768px) {
           bottom: -86px;
 
@@ -428,18 +440,15 @@ button {
       .component-title {
         bottom: -137px;
         left: -68px;
-
-        @media (max-width: 768px) {
+        @media (max-width: 602px) {
           bottom: -90px;
           left: -110px;
           width: 300px;
         }
       }
-
       @media (max-width: 602px) {
         margin-top: 100px;
       }
-
     }
   }
 
@@ -451,8 +460,6 @@ button {
 }
 
 .program {
-  //width: 100%;
-
   .ea-title {
     padding-top: 173px;
     font-size: 3rem;
@@ -511,7 +518,6 @@ button {
 
     .ea-day {
       padding-left: 496px;
-
       @media (max-width: 1550px) {
         padding-left: 296px;
       }
@@ -547,7 +553,6 @@ button {
     background-size: cover;
     position: relative;
     height: 730px;
-
     @media (max-width: 1550px) {
       background-position-x: -200px;
     }
@@ -561,12 +566,13 @@ button {
     @media (max-width: 1070px) {
       background-position-x: -500px;
     }
+    @media (max-width: 960px) {
+      height: 850px;
+    }
     @media (max-width: 768px) {
-      background: url("../img/mobile/bkg2_mbl.jpg") no-repeat 0 0;
-      background-size: cover;
+      background: url("../img/mobile/bkg2_mbl.jpg") no-repeat 0, $bg3-color;
       height: 1196px;
     }
-
 
     &_img {
       position: absolute;
@@ -607,6 +613,11 @@ button {
       @media (max-width: 1070px) {
         left: -5px;
       }
+      @media (max-width: 960px) {
+        width: 750px;
+        left: 42px;
+        top: 10px;
+      }
       @media (max-width: 768px) {
         width: 470px;
         left: -17px;
@@ -630,6 +641,9 @@ button {
 
       & > :nth-child(3) {
         margin-left: 67px;
+        @media (max-width: 960px) {
+          margin-left: 71px;
+        }
         @media (max-width: 768px) {
           margin-left: 76px;
         }
@@ -637,6 +651,9 @@ button {
 
       & > :nth-child(4) {
         margin-left: 71px;
+        @media (max-width: 960px) {
+          margin-left: 76px;
+        }
         @media (max-width: 768px) {
           margin-left: 87px;
         }
@@ -657,6 +674,9 @@ button {
         @media (max-width: 1250px) {
           margin-left: 66px;
         }
+        @media (max-width: 960px) {
+          margin-left: 62px;
+        }
         @media (max-width: 768px) {
           margin-left: 87px;
         }
@@ -666,6 +686,9 @@ button {
         margin-left: 54px;
         @media (max-width: 1250px) {
           margin-left: 59px;
+        }
+        @media (max-width: 960px) {
+          margin-left: 46px;
         }
         @media (max-width: 768px) {
           margin-left: 75px;
@@ -678,6 +701,9 @@ button {
         @media (max-width: 1250px) {
           margin-left: 43px;
         }
+        @media (max-width: 960px) {
+          margin-left: 27px;
+        }
         @media (max-width: 768px) {
           margin-left: 61px;
         }
@@ -688,6 +714,9 @@ button {
 
         @media (max-width: 1250px) {
           margin-left: 31px;
+        }
+        @media (max-width: 960px) {
+          margin-left: 12px;
         }
         @media (max-width: 768px) {
           margin-left: 45px;
@@ -719,9 +748,11 @@ button {
       @media (max-width: 1070px) {
         left: 50px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 960px) {
         left: 0;
         width: 100%;
+      }
+      @media (max-width: 768px) {
         span {
           display: block;
         }

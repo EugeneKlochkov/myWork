@@ -7772,7 +7772,6 @@ h3 {
 
 body, header, main, footer {
   max-width: 1914px;
-  min-width: 450px;
   margin: 0 auto;
   font: 400 18px/1.25 "PT Sans", sans-serif;
   color: #010101;
@@ -7818,6 +7817,11 @@ button {
   background: url("../img/desctop/bkg1_dskt.jpg") no-repeat 50%;
   background-size: cover;
   font-weight: bold;
+}
+@media (max-width: 993px) {
+  .ea-banner {
+    height: 675px;
+  }
 }
 @media (max-width: 768px) {
   .ea-banner {
@@ -7945,11 +7949,14 @@ button {
   border-right: 1px solid #e1041e;
   border-left: 1px solid #e1041e;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .ea-banner_box {
-    padding-top: 55px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 55px 80px 10px;
+  }
+}
+@media (max-width: 992px) {
+  .ea-banner_box {
+    padding: 55px 110px 20px;
   }
 }
 @media (max-width: 768px) {
@@ -8004,6 +8011,11 @@ button {
     font-size: 4.4rem;
   }
 }
+@media (max-width: 992px) {
+  .ea-banner_box .ea-title {
+    font-size: 3.5rem;
+  }
+}
 @media (max-width: 768px) {
   .ea-banner_box .ea-title {
     font-size: 3rem;
@@ -8026,6 +8038,11 @@ button {
     font-size: 1.7rem;
   }
 }
+@media (max-width: 992px) {
+  .ea-banner_box .ea-description {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 768px) {
   .ea-banner_box .ea-description {
     font-size: 1.3rem;
@@ -8046,12 +8063,6 @@ button {
 }
 @media (max-width: 992px) {
   .ea-banner .programs {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .ea-banner .programs {
     padding-top: 4px;
     flex-direction: column;
   }
@@ -8067,9 +8078,17 @@ button {
   font-weight: bold;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .ea-banner .programs .ea-btn:last-of-type {
     margin-top: 16px;
+  }
+  .ea-banner .programs .ea-btn:first-of-type {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .ea-banner .programs .ea-btn:first-of-type {
+    margin-top: 0;
   }
 }
 .ea-banner .programs .ea-btn:before {
@@ -8135,6 +8154,11 @@ button {
 @media (max-width: 1250px) {
   .components {
     padding-top: 34px;
+  }
+}
+@media (max-width: 100px) {
+  .components {
+    padding: 34px 50px 0;
   }
 }
 @media (max-width: 768px) {
@@ -8217,7 +8241,7 @@ button {
   bottom: -137px;
   left: -68px;
 }
-@media (max-width: 768px) {
+@media (max-width: 602px) {
   .components .component__z3 .component-title {
     bottom: -90px;
     left: -110px;
@@ -8371,10 +8395,14 @@ button {
     background-position-x: -500px;
   }
 }
+@media (max-width: 960px) {
+  .program .ea-plan {
+    height: 850px;
+  }
+}
 @media (max-width: 768px) {
   .program .ea-plan {
-    background: url("../img/mobile/bkg2_mbl.jpg") no-repeat 0 0;
-    background-size: cover;
+    background: url("../img/mobile/bkg2_mbl.jpg") no-repeat 0, #91d3d2;
     height: 1196px;
   }
 }
@@ -8429,6 +8457,13 @@ button {
     left: -5px;
   }
 }
+@media (max-width: 960px) {
+  .program .ea-plan .first-level {
+    width: 750px;
+    left: 42px;
+    top: 10px;
+  }
+}
 @media (max-width: 768px) {
   .program .ea-plan .first-level {
     width: 470px;
@@ -8453,6 +8488,11 @@ button {
 .program .ea-plan .first-level > :nth-child(3) {
   margin-left: 67px;
 }
+@media (max-width: 960px) {
+  .program .ea-plan .first-level > :nth-child(3) {
+    margin-left: 71px;
+  }
+}
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(3) {
     margin-left: 76px;
@@ -8460,6 +8500,11 @@ button {
 }
 .program .ea-plan .first-level > :nth-child(4) {
   margin-left: 71px;
+}
+@media (max-width: 960px) {
+  .program .ea-plan .first-level > :nth-child(4) {
+    margin-left: 76px;
+  }
 }
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(4) {
@@ -8487,6 +8532,11 @@ button {
     margin-left: 66px;
   }
 }
+@media (max-width: 960px) {
+  .program .ea-plan .first-level > :nth-child(6) {
+    margin-left: 62px;
+  }
+}
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(6) {
     margin-left: 87px;
@@ -8498,6 +8548,11 @@ button {
 @media (max-width: 1250px) {
   .program .ea-plan .first-level > :nth-child(7) {
     margin-left: 59px;
+  }
+}
+@media (max-width: 960px) {
+  .program .ea-plan .first-level > :nth-child(7) {
+    margin-left: 46px;
   }
 }
 @media (max-width: 768px) {
@@ -8513,6 +8568,11 @@ button {
     margin-left: 43px;
   }
 }
+@media (max-width: 960px) {
+  .program .ea-plan .first-level > :nth-child(8) {
+    margin-left: 27px;
+  }
+}
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(8) {
     margin-left: 61px;
@@ -8524,6 +8584,11 @@ button {
 @media (max-width: 1250px) {
   .program .ea-plan .first-level > :nth-child(9) {
     margin-left: 31px;
+  }
+}
+@media (max-width: 960px) {
+  .program .ea-plan .first-level > :nth-child(9) {
+    margin-left: 12px;
   }
 }
 @media (max-width: 768px) {
@@ -8562,11 +8627,13 @@ button {
     left: 50px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .program .ea-plan .ea-result {
     left: 0;
     width: 100%;
   }
+}
+@media (max-width: 768px) {
   .program .ea-plan .ea-result span {
     display: block;
   }
