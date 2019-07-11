@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext');
+
+@font-face {
+  font-family: 'InsetF Heavy';
+  src: url('../fonts/InsetFHeavy.woff2') format('woff2'),
+  url('../fonts/InsetFHeavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$mainFont: 400 18px/1.25 'PT Sans', sans-serif;
+$mainFF: 'PT Sans', sans-serif;
