@@ -152,8 +152,11 @@ button {
         display: block;
       }
     }
+    @media (max-width: 450px) {
+      font-size: 1rem;
+    }
 
-    &:before {
+      &:before {
       content: '';
       display: inline-block;
       position: absolute;
@@ -168,8 +171,8 @@ button {
         left: 58%;
       }
       @media (max-width: 450px) {
-        top: 33px;
-        left: 62%;
+        top: 30px;
+        left: 61%;
       }
     }
   }

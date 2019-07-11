@@ -7925,6 +7925,11 @@ button {
     display: block;
   }
 }
+@media (max-width: 450px) {
+  .ea-banner .ea-text {
+    font-size: 1rem;
+  }
+}
 .ea-banner .ea-text:before {
   content: "";
   display: inline-block;
@@ -7944,8 +7949,8 @@ button {
 }
 @media (max-width: 450px) {
   .ea-banner .ea-text:before {
-    top: 33px;
-    left: 62%;
+    top: 30px;
+    left: 61%;
   }
 }
 .ea-banner_box {
