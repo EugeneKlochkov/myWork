@@ -17,7 +17,7 @@ $bg3-color: #91d3d2;
 
 body, header, main, footer {
   max-width: 1914px;
-  //min-width: 450px;
+  min-width: 320px;
   margin: 0 auto;
   font: $mainFont;
   color: $black;
@@ -209,7 +209,12 @@ button {
       @media (max-width: 576px) {
         width: 30%;
       }
-
+      @media (max-width: 450px) {
+        top: -20px;
+      }
+      @media (max-width: 360px) {
+        top: -13px;
+      }
     }
 
     &:before {
@@ -244,6 +249,12 @@ button {
           white-space: nowrap;
         }
       }
+      @media (max-width: 450px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 350px) {
+        font-size: 1.5rem;
+      }
     }
 
     .ea-description {
@@ -262,6 +273,10 @@ button {
         padding-top: 44px;
         line-height: 1.4;
         letter-spacing: 1px;
+      }
+      @media (max-width: 450px) {
+        font-size: 1rem;
+        padding-top: 15px;
       }
     }
   }
@@ -300,6 +315,11 @@ button {
         &:first-of-type {
           margin-top: 0;
         }
+      }
+      @media (max-width: 450px) {
+        width: 180px;
+        font-size: .8em;
+        padding-top: 10px;
       }
 
       &:before {
@@ -342,6 +362,10 @@ button {
     @media (max-width: 768px) {
       margin-top: 32px;
     }
+    @media (max-width: 450px) {
+      width: 280px;
+      font-size: 1rem;
+    }
 
     &:hover {
       opacity: .7;
@@ -353,6 +377,10 @@ button {
     padding-top: 6px;
     color: $brown;
     font-size: 1.5rem;
+    @media (max-width: 450px) {
+      font-size: 1rem;
+      color: $white;
+    }
   }
 }
 
@@ -446,6 +474,7 @@ button {
           width: 300px;
         }
       }
+
       @media (max-width: 602px) {
         margin-top: 100px;
       }
@@ -471,6 +500,10 @@ button {
         display: block;
       }
     }
+    @media (max-width: 450px) {
+      font-size: 2rem;
+    }
+
 
     &:before, &:after {
       content: '';
@@ -492,6 +525,9 @@ button {
       @media (max-width: 768px) {
         bottom: 88px;
         width: 23%;
+      }
+      @media (max-width: 450px) {
+        bottom: 60px;
       }
     }
 
@@ -531,6 +567,9 @@ button {
         padding-left: 54px;
         margin-bottom: 0;
       }
+      @media (max-width: 450px) {
+        padding-left: 20px;
+      }
     }
 
     .time {
@@ -543,6 +582,9 @@ button {
       }
       @media (max-width: 768px) {
         padding-left: 54px;
+      }
+      @media (max-width: 450px) {
+        padding-left: 20px;
       }
     }
   }
@@ -573,6 +615,10 @@ button {
       background: url("../img/mobile/bkg2_mbl.jpg") no-repeat 0, $bg3-color;
       height: 1196px;
     }
+    @media (max-width: 450px) {
+      height: 1100px;
+    }
+
 
     &_img {
       position: absolute;
@@ -623,6 +669,10 @@ button {
         left: -17px;
         top: 8px;
       }
+      @media (max-width: 450px) {
+        font-size: .8rem;
+        width: 310px;
+      }
 
       & > li {
         padding: 10px 0 10px 20px;
@@ -633,10 +683,16 @@ button {
 
       & > :nth-child(1) {
         margin-left: 50px;
+        @media (max-width: 450px) {
+          margin-left: 61px;
+        }
       }
 
       & > :nth-child(2) {
         margin-left: 60px;
+        @media (max-width: 450px) {
+          margin-left: 68px;
+        }
       }
 
       & > :nth-child(3) {
@@ -646,6 +702,9 @@ button {
         }
         @media (max-width: 768px) {
           margin-left: 76px;
+        }
+        @media (max-width: 450px) {
+          margin-left: 80px;
         }
       }
 
@@ -727,7 +786,9 @@ button {
     .second-level {
       padding: 14px 42px;
       list-style-image: url("../img/b3.png");
-
+      @media (max-width: 450px) {
+        padding-left: 25px;
+      }
     }
 
     .ea-result {
@@ -758,6 +819,7 @@ button {
         }
       }
 
+
       h3.ea-title {
         font-size: 1.7rem;
         margin: 0;
@@ -777,6 +839,9 @@ button {
         text-align: center;
         font-weight: 700;
         font-size: 1.5rem;
+        @media (max-width: 450px) {
+          font-size: 1rem;
+        }
       }
     }
   }

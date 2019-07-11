@@ -7772,6 +7772,7 @@ h3 {
 
 body, header, main, footer {
   max-width: 1914px;
+  min-width: 320px;
   margin: 0 auto;
   font: 400 18px/1.25 "PT Sans", sans-serif;
   color: #010101;
@@ -7992,6 +7993,16 @@ button {
     width: 30%;
   }
 }
+@media (max-width: 450px) {
+  .ea-banner_box:before, .ea-banner_box:after {
+    top: -20px;
+  }
+}
+@media (max-width: 360px) {
+  .ea-banner_box:before, .ea-banner_box:after {
+    top: -13px;
+  }
+}
 .ea-banner_box:before {
   left: 0;
 }
@@ -8029,6 +8040,16 @@ button {
     white-space: nowrap;
   }
 }
+@media (max-width: 450px) {
+  .ea-banner_box .ea-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 350px) {
+  .ea-banner_box .ea-title {
+    font-size: 1.5rem;
+  }
+}
 .ea-banner_box .ea-description {
   font-size: 1.9rem;
   letter-spacing: -0.4px;
@@ -8051,6 +8072,12 @@ button {
     padding-top: 44px;
     line-height: 1.4;
     letter-spacing: 1px;
+  }
+}
+@media (max-width: 450px) {
+  .ea-banner_box .ea-description {
+    font-size: 1rem;
+    padding-top: 15px;
   }
 }
 .ea-banner .programs {
@@ -8089,6 +8116,13 @@ button {
 @media (max-width: 768px) {
   .ea-banner .programs .ea-btn:first-of-type {
     margin-top: 0;
+  }
+}
+@media (max-width: 450px) {
+  .ea-banner .programs .ea-btn {
+    width: 180px;
+    font-size: 0.8em;
+    padding-top: 10px;
   }
 }
 .ea-banner .programs .ea-btn:before {
@@ -8134,6 +8168,12 @@ button {
     margin-top: 32px;
   }
 }
+@media (max-width: 450px) {
+  .ea-banner .stock {
+    width: 280px;
+    font-size: 1rem;
+  }
+}
 .ea-banner .stock:hover {
   opacity: 0.7;
   cursor: pointer;
@@ -8142,6 +8182,12 @@ button {
   padding-top: 6px;
   color: #4e1118;
   font-size: 1.5rem;
+}
+@media (max-width: 450px) {
+  .ea-banner .event {
+    font-size: 1rem;
+    color: #ffffff;
+  }
 }
 
 .components {
@@ -8273,6 +8319,11 @@ button {
     display: block;
   }
 }
+@media (max-width: 450px) {
+  .program .ea-title {
+    font-size: 2rem;
+  }
+}
 .program .ea-title:before, .program .ea-title:after {
   content: "";
   display: inline-block;
@@ -8301,6 +8352,11 @@ button {
   .program .ea-title:before, .program .ea-title:after {
     bottom: 88px;
     width: 23%;
+  }
+}
+@media (max-width: 450px) {
+  .program .ea-title:before, .program .ea-title:after {
+    bottom: 60px;
   }
 }
 .program .ea-title:before {
@@ -8349,6 +8405,11 @@ button {
     margin-bottom: 0;
   }
 }
+@media (max-width: 450px) {
+  .program .ea-head .ea-day {
+    padding-left: 20px;
+  }
+}
 .program .ea-head .time {
   padding-left: 562px;
 }
@@ -8365,6 +8426,11 @@ button {
 @media (max-width: 768px) {
   .program .ea-head .time {
     padding-left: 54px;
+  }
+}
+@media (max-width: 450px) {
+  .program .ea-head .time {
+    padding-left: 20px;
   }
 }
 .program .ea-plan {
@@ -8404,6 +8470,11 @@ button {
   .program .ea-plan {
     background: url("../img/mobile/bkg2_mbl.jpg") no-repeat 0, #91d3d2;
     height: 1196px;
+  }
+}
+@media (max-width: 450px) {
+  .program .ea-plan {
+    height: 1100px;
   }
 }
 .program .ea-plan_img {
@@ -8471,6 +8542,12 @@ button {
     top: 8px;
   }
 }
+@media (max-width: 450px) {
+  .program .ea-plan .first-level {
+    font-size: 0.8rem;
+    width: 310px;
+  }
+}
 .program .ea-plan .first-level > li {
   padding: 10px 0 10px 20px;
 }
@@ -8482,8 +8559,18 @@ button {
 .program .ea-plan .first-level > :nth-child(1) {
   margin-left: 50px;
 }
+@media (max-width: 450px) {
+  .program .ea-plan .first-level > :nth-child(1) {
+    margin-left: 61px;
+  }
+}
 .program .ea-plan .first-level > :nth-child(2) {
   margin-left: 60px;
+}
+@media (max-width: 450px) {
+  .program .ea-plan .first-level > :nth-child(2) {
+    margin-left: 68px;
+  }
 }
 .program .ea-plan .first-level > :nth-child(3) {
   margin-left: 67px;
@@ -8496,6 +8583,11 @@ button {
 @media (max-width: 768px) {
   .program .ea-plan .first-level > :nth-child(3) {
     margin-left: 76px;
+  }
+}
+@media (max-width: 450px) {
+  .program .ea-plan .first-level > :nth-child(3) {
+    margin-left: 80px;
   }
 }
 .program .ea-plan .first-level > :nth-child(4) {
@@ -8600,6 +8692,11 @@ button {
   padding: 14px 42px;
   list-style-image: url("../img/b3.png");
 }
+@media (max-width: 450px) {
+  .program .ea-plan .second-level {
+    padding-left: 25px;
+  }
+}
 .program .ea-plan .ea-result {
   position: absolute;
   width: 923px;
@@ -8657,6 +8754,11 @@ button {
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
+}
+@media (max-width: 450px) {
+  .program .ea-plan .ea-result p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
