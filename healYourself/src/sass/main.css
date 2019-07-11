@@ -7942,6 +7942,12 @@ button {
     left: 58%;
   }
 }
+@media (max-width: 450px) {
+  .ea-banner .ea-text:before {
+    top: 33px;
+    left: 62%;
+  }
+}
 .ea-banner_box {
   margin: 70px auto 0;
   padding: 60px 60px 15px;
@@ -8755,9 +8761,15 @@ button {
   font-weight: 700;
   font-size: 1.5rem;
 }
+@media (max-width: 992px) {
+  .program .ea-plan .ea-result p {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 450px) {
   .program .ea-plan .ea-result p {
     font-size: 1rem;
+    padding: 5px 10px 0;
   }
 }
 

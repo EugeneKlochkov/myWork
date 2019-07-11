@@ -166,7 +166,10 @@ button {
       @media (max-width: 768px) {
         top: 33px;
         left: 58%;
-
+      }
+      @media (max-width: 450px) {
+        top: 33px;
+        left: 62%;
       }
     }
   }
@@ -839,8 +842,12 @@ button {
         text-align: center;
         font-weight: 700;
         font-size: 1.5rem;
+        @media (max-width: 992px) {
+          font-size: 1.2rem;
+        }
         @media (max-width: 450px) {
           font-size: 1rem;
+          padding: 5px 10px 0;
         }
       }
     }
