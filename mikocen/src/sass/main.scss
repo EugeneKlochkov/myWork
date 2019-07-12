@@ -1,9 +1,27 @@
 @import "bootstrap/bootstrap";
 @import "fonts";
 
-$bg_white: #ffffff;
+$white: #ffffff;
+$black: #383334;
 $bg_gray: #e2e2e2;
+$bg_2v1: #a7c93d;
+$bd-2v1: #e8edc9;
+$bg_1: #a7c93d;
+$bg_price_gray: #a8ca3f;
+$bg_price_orange: #ff6b00;
+$bg_price_form: #ffcb02;
+$bg_btn_order: #ffca02;
+$bd_btn_order: #ffda4e;
+$svg_orange: #fd7532; //+arrow-round
+$svg_green: #a8ca3f; //+bg_2
+$svg_protection: #ff6b00; //+star+bottle+bank
+$svg_arrow_dotted: #aec3da;
+$svg_calendar: #fa4f01;
+$term: #ff6b00;
+$line_green: #a7c93d;
+$line_orange: #ff6b00;
 $gray: #a3acb5;
+
 
 * {
   margin: 0;
@@ -12,11 +30,197 @@ $gray: #a3acb5;
 
 body {
   width: 100%;
-  height: 100%;
+  //max-width: 2560px;
   background-color: $bg_gray;
   font: $main_font;
+  color: $black;
 }
 
-svg #type {
+header, main, footer {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+/*
+Стили для SVG-элементов
+*/
+#type, #stamp, #people {
   fill: $gray;
+}
+
+#truck {
+  fill: $svg_orange;
+}
+
+.icon-type {
+  width: 38px;
+  height: 40px;
+}
+
+.icon-stamp {
+  width: 26px;
+  height: 41px;
+}
+
+.icon-people {
+  width: 40px;
+  height: 35px;
+}
+
+/*
+FONT SIZE
+ */
+.ea-logo_text {
+  font-size: 1.375rem;
+  font-weight: 900;
+}
+
+.ea-title {
+  .ea-banner_advantages & {
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+}
+
+.ea-text {
+  .ea-head & {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .ea-banner_advantages & {
+    font-size: 2.125rem;
+    font-weight: 500;
+  }
+
+  .advantages & {
+    font-size: 1.25rem;
+  }
+
+  .advantage_images & {
+    font-weight: 500;
+  }
+
+}
+
+.ul-orange {
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    background-color: $line_orange;
+    z-index: 0;
+  }
+}
+.ul-green {
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    background-color: $line_green;
+    z-index: 0;
+  }
+}
+
+.ea-section {
+  &:nth-child(odd) {
+    background: $white;
+  }
+}
+
+.ea-logo {
+  & > * {
+    display: inline-block;
+  }
+
+  &_img {
+    vertical-align: middle;
+    width: 82px;
+    height: 58px;
+    background: url("../img/flower-orange.png") no-repeat 0 0,
+    url("../img/flower-green.png") no-repeat 100% 100%;
+  }
+
+  &_text {
+    padding-left: 13px;
+  }
+}
+
+.ea-banner {
+  height: 835px;
+  background: url("../img/types-packageing.png") no-repeat 32.3% 111%,
+  url("../img/feet.png") no-repeat 24% 0,
+  url("../img/round-image.png") no-repeat 30% 61%,
+  url("../img/round-img-bd.png") no-repeat 26.9% 71%,
+  url("../img/wave-s1.png") no-repeat 0 100%,
+  url("../img/bg-s1.png") no-repeat 0 0,
+  url("../img/photo-room.jpg") no-repeat 0 0;
+
+  .ea-head {
+    padding-top: 15px;
+
+    .ea-head_item {
+      display: flex;
+      justify-content: space-between;
+      .ea-text {
+        padding-left: 12px;
+      }
+    }
+  }
+
+  &_content {
+    padding-top: 40px;
+
+    .ea-title span {
+      display: block;
+    }
+    .advantages {
+      display: flex;
+      justify-content: space-between;
+
+      .advantage_images {
+        background: url("../img/arrow-dotted.svg") no-repeat 50% 50%;
+      }
+      .advantage_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 7px solid $bd-2v1;
+        color: $white;
+        &__2v1 {
+          background: $bg_2v1;
+        }
+        &__1 {
+          background: $bg_1;
+        }
+        &__2 {
+          background: $svg_green;
+        }
+      }
+    }
+
+  }
+
+}
+
+.ea-section {
+  width: 100%;
 }
