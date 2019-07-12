@@ -7908,7 +7908,7 @@ button {
 .ea-banner .ea-text {
   position: relative;
   font-size: 1.5rem;
-  padding-top: 54px;
+  padding-top: 50px;
 }
 @media (max-width: 1250px) {
   .ea-banner .ea-text {
@@ -8093,7 +8093,7 @@ button {
 }
 .ea-banner .programs {
   margin: 0 auto;
-  padding: 26px 60px 0;
+  padding: 26px 100px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8202,122 +8202,128 @@ button {
 }
 
 .components {
+  width: 990px;
   padding-top: 78px;
   font-weight: 700;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .components {
-    padding-top: 34px;
+    padding-top: 42px;
   }
 }
-@media (max-width: 100px) {
+@media (max-width: 992px) {
   .components {
-    padding: 34px 50px 0;
+    width: 700px;
   }
 }
 @media (max-width: 768px) {
   .components {
     flex-wrap: wrap;
+    width: 570px;
+  }
+  .components .sign__equal {
+    width: 100%;
+  }
+  .components .sign__plus {
+    position: relative;
+    top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .components {
+    width: 340px;
+    padding-top: 25px;
+  }
+  .components .sign__equal {
+    position: relative;
+    top: -50px;
   }
 }
 .components .component {
-  position: relative;
+  width: 250px;
   text-align: center;
 }
+@media (max-width: 576px) {
+  .components .component {
+    width: 100px;
+  }
+  .components .component__z3 {
+    width: 100%;
+  }
+}
 .components .component .component-title {
-  position: absolute;
+  padding-top: 154px;
   font-size: 1.9rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .components .component .component-title {
+    padding-top: 130px;
     font-size: 1.5rem;
   }
 }
-.components .component__z1 {
-  background: url("../img/z1.png") no-repeat;
-  background-size: cover;
-  width: 136px;
-  height: 136px;
-}
 @media (max-width: 768px) {
+  .components .component .component-title {
+    padding-top: 115px;
+  }
+}
+.components .component__z1 {
+  background: url("../img/z1.png") no-repeat 50% 0;
+}
+@media (max-width: 992px) {
   .components .component__z1 {
-    width: 94px;
-    height: 94px;
     background-image: url(../img/mobile/z1_mbl.png);
   }
 }
-.components .component__z1 .component-title {
-  bottom: -74px;
-  left: 34px;
-}
-@media (max-width: 768px) {
-  .components .component__z1 .component-title {
-    width: 75px;
-    bottom: -57px;
-    left: 16px;
-  }
-}
 .components .component__z2 {
-  background: url("../img/z2.png") no-repeat;
-  background-size: cover;
-  width: 133px;
-  height: 131px;
+  background: url("../img/z2.png") no-repeat 50% 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .components .component__z2 {
-    width: 91px;
-    height: 91px;
     background-image: url(../img/mobile/z2_mbl.png);
   }
 }
-.components .component__z2 .component-title {
-  bottom: -106px;
-}
-@media (max-width: 768px) {
-  .components .component__z2 .component-title {
-    bottom: -86px;
-  }
-}
 .components .component__z3 {
-  background: url("../img/z3.png") no-repeat;
-  background-size: cover;
-  width: 111px;
-  height: 150px;
+  background: url("../img/z3.png") no-repeat 50% 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .components .component__z3 {
-    width: 85px;
-    height: 115px;
     background-image: url(../img/mobile/z3_mbl.png);
   }
 }
-.components .component__z3 .component-title {
-  bottom: -137px;
-  left: -68px;
-}
-@media (max-width: 602px) {
-  .components .component__z3 .component-title {
-    bottom: -90px;
-    left: -110px;
-    width: 300px;
+@media (max-width: 768px) {
+  .components .component__z3 {
+    width: 100%;
+  }
+  .components .component__z3 span {
+    display: block;
   }
 }
-@media (max-width: 602px) {
+@media (max-width: 576px) {
   .components .component__z3 {
-    margin-top: 100px;
+    position: relative;
+    top: -52px;
   }
 }
 .components .sign {
-  padding: 0 10%;
+  padding-top: 26px;
   font-size: 60px;
   font-weight: 700;
 }
+@media (max-width: 992px) {
+  .components .sign {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .components .sign {
+    padding-top: 0;
+  }
+}
 
 .program .ea-title {
-  padding-top: 173px;
+  padding-top: 35px;
   font-size: 3rem;
   text-align: center;
   position: relative;
@@ -8328,6 +8334,11 @@ button {
   }
   .program .ea-title span {
     display: block;
+  }
+}
+@media (max-width: 576px) {
+  .program .ea-title {
+    padding-top: 0;
   }
 }
 @media (max-width: 450px) {
@@ -8368,6 +8379,7 @@ button {
 @media (max-width: 450px) {
   .program .ea-title:before, .program .ea-title:after {
     bottom: 60px;
+    width: 20%;
   }
 }
 .program .ea-title:before {
